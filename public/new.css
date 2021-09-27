@@ -1,0 +1,272 @@
+body{
+  margin: 0; 
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#0F0F11;
+}
+.home-page{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color:#0F0F11;
+}
+.navigation-container{
+  width: 20%;
+  max-width: 100px;
+  min-width: 70px;
+  display: flex;
+  flex-direction:column;
+  flex-basis: auto;
+ 
+
+}
+.main{
+flex: 1;
+  background-color: rgb(23, 23, 24);
+  display: flex;
+  flex-direction: column;
+}
+.tweets-sidebar-container{
+  
+flex: 1 ;
+ display: flex;
+}
+.tweets-search-container{
+ 
+  margin: 20px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  display: flex;
+ align-items: center;
+ border-bottom: 1px solid #979797;
+ 
+}
+.tweets-list{
+
+  margin: 20px;
+   
+ }
+.tweet-container{
+
+  border: 1px solid #1C1C1C;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+ 
+}
+.tweets-sidebar{
+  width: 300px;
+  height: 500px;
+ margin: 30px;
+  background-color: white;
+  border: 1px solid #979797;
+  border-radius: 40px;
+  overflow: hidden;
+  position: fixed;
+}
+.navigation{
+  color: white;
+  
+  margin-top: 30px;
+  border: 1px solid #0F0F11;
+}
+.logo{
+ 
+  display: flex;
+  justify-content: center;
+}
+.logo i{
+  font-size: 40px;
+}
+.home-link{
+  margin-top: 25px;
+  display:flex;
+  justify-content: center;
+  border-right: 3px solid blue;
+  align-items: center;
+  height: 60px;
+
+
+}
+.home-link i{
+  font-size: 30px;
+  color: blue;
+}
+.profile-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.profile{
+
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+background-color: aliceblue;
+border: 1px solid #0F0F11;
+}
+.tweets-search-container input{
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tweets-search-container i{
+
+ color: white;
+ font-size: 30px;
+ padding-left: 10px ;
+ cursor: pointer;
+}
+.tweets-search-container :focus{
+  outline: none;
+
+
+}
+.tweet-user-info{
+  margin-top: 20px;
+  margin-left: 10px;
+
+  display: flex;
+  align-items: center;
+  
+}
+.tweet-text-container{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 15px;
+  margin-right: 20px;
+  color: rgba(255,255,255,0.74);
+}
+.tweet-image-container{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+ height: 200px;
+  border: 1px solid #1C1C1C;
+  border-radius: 20px;
+  
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+ 
+}
+.tweet-video-container{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+ height: 200px;
+  border: 1px solid #1C1C1C;
+  border-radius: 20px; 
+  overflow: hidden;
+  
+
+}
+
+.tweet-video-container video{
+  width: 100%;
+  height: 100%;
+}
+.tweet-image{
+  
+  flex-basis: 50%;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+}
+
+.tweet-date-container{
+  font-size: 15px;
+  color: #475250;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
+}
+.tweet-user-profile
+{
+  
+  width: 36px;
+  height: 36px;
+
+  
+  border: 1px solid ;
+  border-radius: 50%;
+  background-color: #979797;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden
+  
+}
+
+.tweet-user-name-container{
+ 
+  margin-left: 8px;
+  color: bisque;
+ 
+}
+.tweet-user-fullname{
+  font-size: 10px;
+}
+.tweet-user-username{
+  font-size: 8px;
+}
+
+.tweet-trending
+{
+  height: 200px;
+  background: #f2f2f2;
+ margin: 10px;
+  overflow: hidden;
+  border-radius: 40px;
+ padding-top:  20px; 
+ 
+
+}
+
+.tweet-trending h4{
+font-size: 12px;
+color: #848586;
+margin-top: 0;
+padding-left: 20px;
+margin-bottom: 10px;
+}
+.tweet-trending ul{
+  padding: 0;
+margin: 0;
+list-style: none;
+
+}
+.tweet-trending  ul li{
+  font-size: 26px;
+color: #a5a5a6;
+
+border-top: 0.5px solid #D8D8D8;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 20px;
+font-weight: 600;
+cursor: pointer;
+}
+.next-page-container{
+  margin: 20px;
+  padding: 10px;
+  color: #475250;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #1C1C1C;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15 ease-in-out;
+  visibility: hidden;
+}
+.next-page-container:hover{
+  background-color: #1C1C1C;
+     
+}
